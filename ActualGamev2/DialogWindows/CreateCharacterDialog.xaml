@@ -1,0 +1,36 @@
+﻿<Window x:Class="ActualGamev2.DialogWindows.CreateCharacterDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActualGamev2.DialogWindows"
+        mc:Ignorable="d"
+        Title="CreateCharacterDialog" Height="450" Width="800">
+    <Grid x:Name="createCharDialog">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="ClassGroupBox" Header="Class Selection" Grid.RowSpan="3"  >
+
+        </GroupBox>
+        <RadioButton x:Name="mechanicGroupBox" Content="Mechanic" HorizontalAlignment="Left" Margin="5,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ScavengerGroupBox" Content="Scavenger" HorizontalAlignment="Left" Margin="10,51,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="raiderGroupBox" Content="Raider" HorizontalAlignment="Left" Margin="10,45,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Button x:Name="createPlayerClassButton" Content="Breed this" FontSize="25" Grid.RowSpan="1" Grid.Row="3" Grid.Column="2" Click="createPlayerClassButton_Click"/>
+        <TextBox x:Name="characterName" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="32,25,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="405" Grid.ColumnSpan="3" TextChanged="characterName_TextChanged"/>
+        <Label Content="Please enter your name" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Height="74" Width="405"/>
+        <Label x:Name="charNameAuto" Content="" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="3" Height="74" Width="405" Margin="32,13,38,17" Grid.Row="2">
+        </Label>
+    </Grid>
+</Window>
