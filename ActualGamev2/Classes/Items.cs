@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace ActualGamev2.Classes
 {
-    public  class Items
+    public abstract class Items
     {
+
     }
+
+    public abstract class Weapons : Items
+    {
+
+    }
+
+    public class Blades : Weapons
+    {
+
+    }
+
 }

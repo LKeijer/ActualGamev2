@@ -61,7 +61,15 @@ namespace ActualGamev2.DialogWindows
 
         private void createPlayerClassButton_Click(object sender, RoutedEventArgs e)
         {
+            if (mechanicGroupBox.IsChecked == true)
+            {
+                Classes.Mechanic newPlayer = new Classes.Mechanic(charNameAuto.Content.ToString());
+                
+                this.Visibility = Visibility.Collapsed;
+                Windows.GameScreen gameWindow = new Windows.GameScreen();
+                gameWindow.Visibility = Visibility.Visible;
 
+            }
         }
     }
 }
